@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4fa276819d.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/my-logo.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#">My Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I am <br> Muhammad <span> Omer </span> Khan <br> </h1>
+                <p>This is my official portfolio website to show case all my work related to my skillset. </p>
+                <a href="images/My CV.pdf" download class="bton bton2">Download CV</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ------------------------About------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/IMG-20230424-WA0000.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="title">About Me</h1>
+                    <p>
+                        Greetings! I'm Muhammad Omer Khan, a computer scientist, software developer, digital marketer,
+                        and Shopify expert. Currently studying at Pakistan's top computer science university, FAST
+                        University, I'm passionate about leveraging technology to create innovative solutions. Explore
+                        my portfolio to see how I blend my skills and knowledge across these disciplines to deliver
+                        exceptional results. Let's connect and bring ideas to life!</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('Education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-content active" id="skills" >
+                        <ul>
+                            <li><span>Front-End Web Development:</span><br>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>JavaScript</li>
+                                    <li>CSS</li>
+                                    <li>User-Interface (UI)</li>
+                                    <li>Responisve WEB-Design</li>
+                                </ul>
+                            </li>
+
+                            <li><br><span>Back-End Web Development:</span><br>
+                                <ul>
+                                    <li>C</li>
+                                    <li>C++</li>
+                                    <li>Database Management</li>
+                                </ul>
+                            </li>
+
+                            <li><br><span>E-Commerce Store Development</span><br>
+                                <ul>
+                                    <li>Shopify platform</li>
+                                    <li>shopify Website Development</li>
+                                    <li>Daraz Store Development</li>
+                                </ul>
+                            </li>
+
+                            <li><br><span>Digital Marketing:</span><br>
+                                <ul>
+                                    <li>Facebook and Istagram Marketing</li>
+                                    <li>Facebook Ad Manager</li>
+                                    <li>Facebook Event Manager</li>
+                                    <li>Daraz Store Advertizing Techniques</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-content exp" id="Experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Head Shopify Manager at Enfanto Pakistan</li>
+                            <li><span>2022-Current</span><br>Senior Marketeer at Enfanto Pakistan</li>
+                            <li><span>2022-2023</span><br>Intern at MFK Global Ltd.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content edu" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>Matriculation from Karachi Public School.</li>
+                            <li><span>2022</span><br>Intermidiate from Govt. Dehli College.</li>
+                            <li><span>2021</span><br>Daraz Micro PL and Amazon FBA Private Label Course by Extreme Commerce</li>
+                            <li><span>2022-Present</span><br>Undergraduate from FAST University (National University of Computer and Emerging Sciences).</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------Services------------------- -->
+
+    <!-- <div  id="Services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <h2>WEB-Design</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ------------------------Portfolio------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Calculator Webpage</h3>
+                        <p>Simplify complex calculations. Accessible, accurate, and open-source. Your virtual math companion!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Shopify Website</h3>
+                        <p>Enfanto Pakistan - Where Style Meets Childhood Magic; Discover Trendy Kids' Fashion on our Shopify Website.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>QR Code Generator</h3>
+                        <p>QRGenius - Instantly Generate QR Codes with Accuracy and Accessibility. Your Open-source QR Code Generator."</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <a href="#" class="bton">See More</a>
+
+        </div>
+    </div>
+
+    <!-- ------------------------Contact---------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>omerkhan2406@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+92-333 7227870</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100016894758808"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/khan.omer24/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/omer-khan-0a9687279?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9mQJTUwxSAiVL4ARqMwH9Q%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/OmerKhan24"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your mesaage"></textarea>
+                        <button class="bton bton2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Omer 2023. All Rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
